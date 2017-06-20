@@ -3,8 +3,8 @@
     <v-header></v-header>
     <div class='tab'>
       <div class="tab-item">
-        <a v-link="{path:'/goods'}">商品</a>        
-        </div>
+        <a v-link="{path:'/goods'}">商品</a>
+      </div>
       <div class="tab-item">
         <a v-link="{path:'/ratings'}">评论</a>
       </div>
@@ -33,8 +33,9 @@ export default {
   height: 40px;
   line-height: 40px;
 }
-#app .tab .tab-item{
-flex: 1;
-text-align: center;
+
+#app .tab .tab-item {
+  flex: 1;
+  text-align: center;
 }
 </style>
