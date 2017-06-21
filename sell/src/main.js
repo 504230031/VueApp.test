@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import goods from './components/goods/goods.vue'
+import App from './App.vue'
 
 Vue.use(VueRouter)
 
@@ -16,16 +17,17 @@ const router = new VueRouter({
 })
 
 var vm = new Vue({
-  el: '#app',
+  el: 'form',
   data: function () {
     return {
       peopleJSON: []
     }
   },
-  router,
+  router: router,
   watch: {
 
   }
 })
 
 console.log(vm)
+console.log(App)
